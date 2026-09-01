@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <title>Futbol</title>
+    <link rel="stylesheet" href="style/pagina.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navegar">
+                <li class="pagina"><a href="index.html"><img src="recursos/logo.png" alt="Foto-logo"></a></li>
+                <li class="pagina"><a class="link" href="pfc.html">Pico Futbol</a></li>
+                <li class="pagina"><a class="link" href="cayca.html">CAyCA</a></li>
+                <li class="pagina"><a class="link" href="csi.html">Cs. Independiente</a></li>
+                <li class="pagina"><a class="link" href="costa.html">Costa Brava</a></li>
+                <li class="pagina"><a class="link" href="fco.html">FCO</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="portada_club portada">
+            <img src="recursos/logo_csi.png" alt="logo club">
+        </div>
+
+        <h1>Club Sportivo Independiente</h1>
+        <p>Proin volutpat quam quis volutpat placerat. Phasellus pharetra massa a suscipit pharetra. In enim augue, bibendum ut purus vel, fringilla lobortis leo. Duis dignissim ac velit nec blandit. Nam efficitur at sem at posuere. Nullam et risus magna. Donec vel orci ex. 
+            Nulla felis arcu, aliquam id tempus eu, fringilla sed massa.
+        </p>
+
+        <div class="bloques">
+            <div class="bloque">
+                <h3>Actividades realizadas en la institución</h3>
+                <div class="deportes">
+                    <p class="deporte">Fútbol</p>
+                    <p class="deporte">Básquetbol</p>
+                    <p class="deporte">Voleibol y Newcom</p>
+                    <p class="deporte">Hockey sobre césped</p>
+                    <p class="deporte">Rugby</p>
+                </div>
+                <div class="img_club">
+                    <img src="recursos/Club-argentinos-fachada.webp" alt="Fachada">
+                    <img src="recursos/cultural-argentino-pico-cancha.jpg" alt="Cancha">
+                    <img src="recursos/cultural-equipo.jpg" alt="equipo">
+                </div> 
+            </div>
+            
+            <div class="bloque">
+                <h3>Ubicación de la institución</h3>
+                <div class="mapa">
+                    <div id="mapa"
+                    data-titulo="Club Spotivo Independiente"
+                    data-lat="-35.6558"
+                    data-lon="-63.76377">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bloque">
+                <h2>Fútbol</h2>
+                <h3>Primera División</h3>
+                <div class="tabla">    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Pos</th>
+                                <th>Club</th>
+                                <th>Pt</th>
+                                <th>Pj</th>
+                                <th>Pg</th>
+                                <th>Pe</th>
+                                <th>Pp</th>
+                                <th>Df</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2</td>
+                                <td><div class="club"><img src="recursos/logo_csi.png" alt=""><p>Club Atlético y Cultural Argentino</p></div></td>
+                                <td>23</td>
+                                <td>11</td>
+                                <td>7</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>10</td>
+                            </tr>
+                        </tbody>    
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="info">
+            <p>
+                Para más información acerca de la liga 
+                pampeana de futbol puede visitar la siguiente página.
+                <a class="liga" href="https://www.ligapampeana.com.ar/">Liga Pampeana</a>
+            </p>
+        </div>
+    </main>
+    <footer>
+        
+        <div class="contactos">
+            <h3>Más información</h3>
+            <div class="informacion">
+                <a href=""><img class="contacto" src="recursos/instagram.png" alt="logo-insta"></a>
+                <a href=""><img class="contacto" src="recursos/correo-electronico.png" alt="email"></a>
+                <a href=""><img class="contacto" src="recursos/telefono.png" alt="teléfono"></a>
+            </div>
+        </div>
+
+        <div class="auth">
+            <p>Derechos de autor reservados</p>
+        </div>
+    </footer>
+</body>
+<script src="java/app.js"></script>
+</html>
