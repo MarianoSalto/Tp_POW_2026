@@ -169,13 +169,19 @@ tbody tr:nth-child(even) td {
     margin-top: 10px;
 }
 
-.img_club{
+
+.imagenes{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+.img_club{
+    display: block;
+    width: 100%;
 }
 
 .img_club img{
     width: 30%;
+    margin-left: 5px;
     border-radius: 20px;
 }
 
