@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        table {
+            padding: 3px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 3px;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .analysis-text {
+            width: 50%;
+            text-align: justify;
+        }
+
+        /* Tabla 2: Estudio de costos refrigerio */
+        .table-costos {
+            border-collapse: collapse;
+            width: 48%;
+        }
+
+        .col-producto {width: 40%;}
+        .col-cantidad {width: 15%;}
+        .col-precio {width: 27%;}
+        .col-subtotal {width: 18%;}
+
+        /* Tabla 3: Ingresos */
+        .table-ingresos {
+            border-collapse: collapse;
+            width: 40%;
+        }
+
+        .header-row {
+            height: 60px;
+        }
+
+        .col-actividad {width: 70%;}
+        .col-ingresos {width: 30%;}
+
+        /*Esto solo funciona cuando el tamaño de la celda es mayor que el contenido, si no, no se ve el efecto.
+        Esto se puede solucionar con un padding-bottom en la celda.*/
+        .bottom {
+            vertical-align: bottom;
+        }
+
+        .no-border {
+            border-left: hidden;
+            border-bottom: hidden;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Refrigerios</h3>
+    <p>(Tabla 2: Estudio de costos refrigerio)</p>
+
+    <table class="table-costos">
+        <tr>
+            <th class="col-producto">Producto</th>
+            <th class="col-cantidad">Cantidad</th>
+            <th class="col-precio">Precio por<br> unidad</th>
+            <th class="col-subtotal">Subtotal</th>
+        </tr>
+        <tr>
+            <td>Jugo Delvalle</td>
+            <td class="right">140</td>
+            <td class="right">1.000</td>
+            <td class="right">140.000</td>
+        </tr>
+        <tr>
+            <td>SixPac Gaseosa Postobon 4Lts</td>
+            <td class="right">2</td>
+            <td class="right">23.000</td>
+            <td class="right">46.000</td>
+        </tr>
+        <tr>
+            <td>Papas Frito Lay 28 gr</td>
+            <td class="right">140</td>
+            <td class="right">700</td>
+            <td class="right">98.000</td>
+        </tr>
+        <tr>
+            <td>Pastel Gansito</td>
+            <td class="right">140</td>
+            <td class="right">1.200</td>
+            <td class="right">168.000</td>
+        </tr>
+        <tr>
+            <td>Cruasán con Queso Y Jamon</td>
+            <td class="right">140</td>
+            <td class="right">600</td>
+            <td class="right">84.000</td>
+        </tr>
+        <tr>
+            <td>Cruasán con Queso</td>
+            <td class="right">140</td>
+            <td class="right">550</td>
+            <td class="right">77.000</td>
+        </tr>
+        <tr>
+            <td>Panseroti</td>
+            <td class="right">140</td>
+            <td class="right">1.000</td>
+            <td class="right">140.000</td>
+        </tr>
+    </table>
+
+    <p class="analysis-text">Como podemos observar en la tabla 2, se hizo un estudio de costos de
+        diferentes productos que se podían dar como refrigerios teniendo en cuenta,
+        tamaño, valor, y calidad. Tras hacer un estudio y acudir al comité estratégico y
+        demás departamentos se dio por decidido que las opciones más fiables y que
+        dejaban buena imagen al evento, sería comprar 140 cruasanes y comprar 2
+        sixpac's de gaseosa Postobon, contando también con los desechables. Dando
+        un total asi de 134.000 para los refrigerios.</p>
+
+    <h3>Ingresos</h3>
+    <p>(Tabla 3: Ingresos para la realización del evento)</p>
+
+    <table class="table-ingresos">
+        <tr class="header-row">
+            <th colspan="2" class="col-actividad">Actividad</th>
+            <th class="col-ingresos">Ingresos</th>
+        </tr>
+        <tr>
+            <td colspan="2">Gestión en Cooperativa RIACHON LTDA.</td>
+            <td class="right">150.000</td>
+        </tr>
+        <tr>
+            <td colspan="2">Cuota Individual</td>
+            <td class="right">230.000</td>
+        </tr>
+        <tr>
+            <td colspan="2">Ingresos por Asistencia</td>
+            <td class="right">27.000</td>
+        </tr>
+        <tr>
+            <td class="no-border"></td>
+            <td>Total</td>
+            <td class="right">407.000</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

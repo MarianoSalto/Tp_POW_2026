@@ -57,6 +57,12 @@ a{
     color: #ffffff;
 }
 
+.a-normal{
+    font-size: 12pt;
+    text-decoration: underline;
+    color: #ffffff;
+}
+
 img{
     width: 100px;
     height: auto;
