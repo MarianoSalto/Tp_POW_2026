@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16</title>
+
+    <link rel="stylesheet" href="css/css_boostrap/bootstrap.min.css">
+
+    <style>
+        header{
+            text-align: center;
+            margin: 10% 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <h1>Validación Nro CUIT-CUIL</h1>
+        </header>
+        <div class="numero">
+            <form action="">
+                <div class="mb-3">
+                    <label for="disabledTextInput" class="form-label">Ingrese EL CUIT-CUIL</label>
+                    <input type="text" id="dato" class="form-control" placeholder="CUIT-CUIL">
+                </div>
+                <div id="resultado"></div>
+                <button type="button" class="btn btn-primary" onclick="validarCC(event)">Verificar</button>
+            </form>
+            
+        </div>
+        
+    </div>
+
+
+    <script lenguaje="JavaScript" src="js/ejer16.js"></script>
+</body>
+
+</html>
