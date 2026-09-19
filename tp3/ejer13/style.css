@@ -1,0 +1,65 @@
+
+button{
+    margin: 5px;
+    padding: 25px;
+    color: white;
+}
+
+
+
+/*========Clases========*/
+
+.contenedor{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: grid;
+    grid-template-rows: repeat(2,fr);
+}
+
+.teclado{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5,1fr);
+}
+
+
+.color_nro{
+    background-color: rgb(2, 15, 250);
+}
+
+.color_funciones{
+    background-color: orangered;
+}
+
+.color_operaciones{
+    background-color: brown;
+}
+
+.color_igual{
+    background-color: rgb(5, 201, 5);
+}
+
+.pantalla{
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.resultado, .cuenta, .nro_actual{
+    color: white;
+    margin: 10px;
+
+    font-size: 20pt;
+}
+
+
+.cuenta{
+    font-size: 11pt;
+}
