@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <title>Futbol</title>
+    <link rel="stylesheet" href="style/pagina.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navegar">
+                <li class="pagina"><a href="index.html"><img src="recursos/logo.png" alt="Foto-logo"></a></li>
+                <li class="pagina"><a class="link" href="pfc.html">Pico Futbol</a></li>
+                <li class="pagina"><a class="link" href="cayca.html">CAyCA</a></li>
+                <li class="pagina"><a class="link" href="csi.html">Cs. Independiente</a></li>
+                <li class="pagina"><a class="link" href="costa.html">Costa Brava</a></li>
+                <li class="pagina"><a class="link" href="fco.html">FCO</a></li>
+            </ul>
+        </nav>
+        <nav class="breadcrumb" aria-label="breadcrumb">
+            <ol>
+                <li><a href="index.html">Inicio</a></li>
+                <li aria-current="page">Club Sportivo Independiente</li>
+            </ol>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="portada_club portada">
+            <img src="recursos/logo_csi.png" alt="logo club">
+        </div>
+
+        <h1>Club Sportivo Independiente</h1>
+        <p>Club Sportivo Independiente, también conocido como Independiente de General Pico, es un club deportivo ubicado en General Pico, La Pampa. De los varios deportes que se practican en el club, 
+            Independiente fue más conocido por el equipo de básquetbol, que ganó un título de la Liga Nacional de Básquet y fue 3 veces subcampeón, además de campeón Sudamericano.
+            Su clásico rival (que empezó siéndolo en el fútbol pero la rivalidad se trasladó a otros deportes) es el <a class="a-normal"href="pfc.html">Pico Fútbol Club</a>.
+        </p>
+
+        <div class="bloques">
+            <div class="bloque">
+                <h3>Actividades realizadas en la institución</h3>
+                <div class="deportes">
+                    <p class="deporte">Fútbol</p>
+                    <p class="deporte">Básquetbol</p>
+                    <p class="deporte">Voleibol y Newcom</p>
+                    <p class="deporte">Hockey sobre césped</p>
+                    <p class="deporte">Handball</p>
+                </div>
+                <div class="imagen_inicio">
+                    <img src="recursos/csi_fachada.jpeg" alt="Fachada">
+                    <img src="recursos/csi_futbol.jpg" alt="futbol">
+                    <img src="recursos/csi_handball.jpg" alt="equipohandball">
+                    <img src="recursos/csi_basquet.jpg" alt="equipobasquet">
+                </div> 
+            </div>
+            
+            <div class="bloque">
+                <h3>Ubicación de la institución</h3>
+                <div class="mapa">
+                    <div id="mapa"
+                    data-titulo="Club Spotivo Independiente"
+                    data-lat="-35.6558"
+                    data-lon="-63.76377">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bloque">
+                <h2>Fútbol</h2>
+                <h3>Primera División</h3>
+                <div class="tabla">    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Pos</th>
+                                <th>Club</th>
+                                <th>Pt</th>
+                                <th>Pj</th>
+                                <th>Pg</th>
+                                <th>Pe</th>
+                                <th>Pp</th>
+                                <th>Df</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2</td>
+                                <td><div class="club"><img src="recursos/logo_csi.png" alt=""><p>Club Atlético y Cultural Argentino</p></div></td>
+                                <td>23</td>
+                                <td>11</td>
+                                <td>7</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>10</td>
+                            </tr>
+                        </tbody>    
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="info">
+            <p>
+                Para más información acerca de la liga 
+                pampeana de futbol puede visitar la siguiente página.
+                <a class="liga" href="https://www.ligapampeana.com.ar/">Liga Pampeana</a>
+            </p>
+        </div>
+    </main>
+    <footer>
+        
+        <div class="contactos">
+            <h3>Más información</h3>
+            <div class="informacion">
+                <a href=""><img class="contacto" src="recursos/instagram.png" alt="logo-insta"></a>
+                <a href=""><img class="contacto" src="recursos/correo-electronico.png" alt="email"></a>
+                <a href=""><img class="contacto" src="recursos/telefono.png" alt="teléfono"></a>
+            </div>
+        </div>
+
+        <div class="auth">
+            <p>Derechos de autor reservados</p>
+        </div>
+    </footer>
+</body>
+<script src="java/app.js"></script>
+</html>
