@@ -32,7 +32,6 @@ function crearNroAleatorio(min, max) {
 
     nro_aleatorio= Math.floor(Math.random() * (max - min +1)) + min;
     
-    console.log("Número: " + nro_aleatorio)
 }
 
 function corroborarNumero(numero){

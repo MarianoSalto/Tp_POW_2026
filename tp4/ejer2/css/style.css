@@ -1,0 +1,52 @@
+
+
+header{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.bloque{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+
+
+    margin-top: 20px;
+}
+
+.titulo_inputs{
+    text-align: center;
+    margin: 10px;
+}
+
+.inputsBloques{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+
+    margin: 10px 0px;
+}
+
+.inputBloque{
+ margin-bottom: 10px;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.bloqueGenerado{
+    display: flex;
+    justify-content: center;
+}
+
+.nroGenerado{
+    margin-top: 10px;
+    font-size: 16pt;
+    font-weight: bold;
+}

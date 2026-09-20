@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Explorer</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Explorá el mundo Pokémon</h1>
+            <p class="lead">
+                Buscá y conocé información de diferentes Pokémon utilizando PokéAPI.
+            </p>
+
+            <form id="formBusqueda" class="row justify-content-center mt-4">
+                <div class="col-md-7 col-lg-6">
+                    <div class="input-group">
+                        <input
+                            type="text"
+                            id="busqueda"
+                            class="form-control"
+                            placeholder="Buscar Pokémon..."
+                        >
+
+                        <button class="btn btn-primary" type="submit">
+                            <i class="bi bi-search"></i>
+                            Buscar
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <main class="container py-5">
+
+        <div id="mensaje" class="alert d-none"></div>
+
+        <div id="spinner" class="text-center d-none my-5">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Cargando...</span>
+            </div>
+
+            <p class="mt-2">Cargando Pokémon...</p>
+        </div>
+
+        <div id="resultados" class="row g-4"></div>
+
+        <div class="d-flex justify-content-center align-items-center gap-3 mt-5">
+            <button id="btnAnterior" class="btn btn-outline-primary">
+                <i class="bi bi-arrow-left"></i>
+                Anterior
+            </button>
+
+            <span id="paginaActual" class="fw-bold">
+                Página 1
+            </span>
+
+            <button id="btnSiguiente" class="btn btn-primary">
+                Siguiente
+                <i class="bi bi-arrow-right"></i>
+            </button>
+        </div>
+
+    </main>
+
+    <div class="modal fade" id="modalPokemon" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 id="modalTitulo" class="modal-title text-capitalize">
+                        Pokémon
+                    </h5>
+
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal">
+                    </button>
+                </div>
+
+                <div id="modalContenido" class="modal-body"></div>
+
+                <div class="modal-footer">
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-1">Pokémon Explorer</p>
+        <small>
+            Datos obtenidos mediante PokéAPI
+        </small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
