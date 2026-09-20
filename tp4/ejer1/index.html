@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cssBoostrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Seleccionar un Número</title>
+</head>
+<body>
+    <header class="shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+        <h1>Adivina el número</h1>
+    </header>
+    
+    <div class="container-fluid cuerpo">
+        <div class="introduccion">
+            <h5> Se a Generado un nro, ¿Eres capas de adivinarlo?</h5>
+            <p>Se trata de un simple juego de adivinar un número que fue creado aleatoriamente, este número 
+                se encuentra en un rango de valores etre 1 y 100.</p>
+            <p> Lo que se debe hacer es colocar un numero y presionar el boton verificar, en caso de ser falso 
+                 se le indicaran pistas para que usted pueda lleagr al nro.</p>
+        </div>
+
+        <di class="formulario ">
+            <form class="shadow-sm p-5 mb-5 bg-body-tertiary rounded">
+                <div class="mb-3 bloqueForm">
+                    <label for="numero" >Ingrese un número</label>
+                    <input type="number" id="numero" placeholder="Ingrese un número">
+                </div>
+                <div class="pistas">
+                    <p class="mensaje"></p>
+                </div>
+                <button type="submit" class="btn btn-success verificar">Verificar</button>
+                <button class="btn btn-danger reinicio">Reiniciar</button>
+                
+            </form>
+        </div>
+
+        <div class="intentos">
+            <p>Intentos Actuales = </p>
+            <p class="intento">0</p>
+        </div>
+
+        <div class="puntajes">
+            <table>
+                <tr>
+                    <th>Partidas Finalizadas</th>
+                    <th>Mejor Puntaje</th>
+                    <th>Total Intentos</th>
+                    <th>Promedio puntajes</th>
+                </tr>
+                <tr>
+                    <th class="partFinalizadas"></th>
+                    <th class="mejIntento"></th>
+                    <th class="totIntentos"></th>
+                    <th class="promedioPuntaje"></th>
+                </tr>
+            </table>
+        </div>
+        <div class="observacion">
+            <p> Advertencia: si reinicias la página, el número cambia</p>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

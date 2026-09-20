@@ -1,0 +1,86 @@
+html,body{
+    width: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+input{
+    width: 20ch;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h5{
+    margin-bottom: 20px;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+}
+
+.bloqueForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.formulario label{
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.observacion{
+    margin-top: 10px;
+}
+
+
+.introduccion p, .observacion p{
+    margin-left: 10px;
+}
+
+
+.error{
+    color: red;
+}
+
+.exito{
+    color: green;
+}
+
+.puntajes{
+    
+    display: flex;
+    justify-content: space-around;
+    color: brown;
+    margin-bottom: 10px;
+    
+}
+
+
+.intentos{
+    display: flex;
+    justify-content: center;
+}
